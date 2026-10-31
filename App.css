@@ -1,0 +1,88 @@
+﻿// Imports
+import ___CSS_LOADER_API_SOURCEMAP_IMPORT___ from "../node_modules/css-loader/dist/runtime/sourceMaps.js";
+import ___CSS_LOADER_API_IMPORT___ from "../node_modules/css-loader/dist/runtime/api.js";
+import ___CSS_LOADER_GET_URL_IMPORT___ from "../node_modules/css-loader/dist/runtime/getUrl.js";
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27120%27 height=%27120%27%3E%3Cfilter id=%27n%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.9%27 numOctaves=%272%27/%3E%3C/filter%3E%3Crect width=%27120%27 height=%27120%27 filter=%27url%28%23n%29%27 opacity=%270.6%27/%3E%3C/svg%3E", import.meta.url);
+var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.font-serif {
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+}
+.font-mono {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.glass-nav {
+  background: rgba(255, 251, 251, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.hero-arch {
+  border-radius: 999px 999px 24px 24px;
+}
+
+@keyframes marquee-drift {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee-drift 38s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) rotate(var(--float-rot, 0deg)); }
+  50% { transform: translateY(-14px) rotate(var(--float-rot, 0deg)); }
+}
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.swatch-ring {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.swatch-ring:hover {
+  transform: scale(1.12);
+  box-shadow: 0 8px 24px rgba(128, 10, 56, 0.25);
+}
+
+.texture-grain {
+  position: relative;
+}
+.texture-grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
+}
+
+.outline-text {
+  -webkit-text-stroke: 1px rgba(128, 10, 56, 0.35);
+  color: transparent;
+}
+
+.line-mask {
+  display: block;
+  overflow: hidden;
+}
+.line-mask > span {
+  display: block;
+}
+`, "",{"version":3,"sources":["webpack://./src/App.css"],"names":[],"mappings":"AAAA;EACE,4DAA4D;AAC9D;AACA;EACE,wCAAwC;AAC1C;;AAEA;EACE,qCAAqC;EACrC,2BAA2B;EAC3B,mCAAmC;AACrC;;AAEA;EACE,oCAAoC;AACtC;;AAEA;EACE,OAAO,wBAAwB,EAAE;EACjC,KAAK,2BAA2B,EAAE;AACpC;AACA;EACE,4CAA4C;AAC9C;AACA;EACE,4BAA4B;AAC9B;;AAEA;EACE,WAAW,uDAAuD,EAAE;EACpE,MAAM,2DAA2D,EAAE;AACrE;AACA;EACE,6CAA6C;AAC/C;;AAEA;EACE,aAAa;AACf;AACA;EACE,wBAAwB;EACxB,qBAAqB;AACvB;;AAEA;EACE,uDAAuD;AACzD;AACA;EACE,sBAAsB;EACtB,8CAA8C;AAChD;;AAEA;EACE,kBAAkB;AACpB;AACA;EACE,WAAW;EACX,kBAAkB;EAClB,QAAQ;EACR,oBAAoB;EACpB,aAAa;EACb,yDAA0S;AAC5S;;AAEA;EACE,gDAAgD;EAChD,kBAAkB;AACpB;;AAEA;EACE,cAAc;EACd,gBAAgB;AAClB;AACA;EACE,cAAc;AAChB","sourcesContent":[".font-serif {\n  font-family: \"Playfair Display\", \"Cormorant Garamond\", serif;\n}\n.font-mono {\n  font-family: \"JetBrains Mono\", monospace;\n}\n\n.glass-nav {\n  background: rgba(255, 251, 251, 0.82);\n  backdrop-filter: blur(20px);\n  -webkit-backdrop-filter: blur(20px);\n}\n\n.hero-arch {\n  border-radius: 999px 999px 24px 24px;\n}\n\n@keyframes marquee-drift {\n  from { transform: translateX(0); }\n  to { transform: translateX(-50%); }\n}\n.animate-marquee {\n  animation: marquee-drift 38s linear infinite;\n}\n.animate-marquee:hover {\n  animation-play-state: paused;\n}\n\n@keyframes float-slow {\n  0%, 100% { transform: translateY(0) rotate(var(--float-rot, 0deg)); }\n  50% { transform: translateY(-14px) rotate(var(--float-rot, 0deg)); }\n}\n.animate-float-slow {\n  animation: float-slow 6s ease-in-out infinite;\n}\n\n.no-scrollbar::-webkit-scrollbar {\n  display: none;\n}\n.no-scrollbar {\n  -ms-overflow-style: none;\n  scrollbar-width: none;\n}\n\n.swatch-ring {\n  transition: transform 0.25s ease, box-shadow 0.25s ease;\n}\n.swatch-ring:hover {\n  transform: scale(1.12);\n  box-shadow: 0 8px 24px rgba(128, 10, 56, 0.25);\n}\n\n.texture-grain {\n  position: relative;\n}\n.texture-grain::after {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  pointer-events: none;\n  opacity: 0.05;\n  background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E\");\n}\n\n.outline-text {\n  -webkit-text-stroke: 1px rgba(128, 10, 56, 0.35);\n  color: transparent;\n}\n\n.line-mask {\n  display: block;\n  overflow: hidden;\n}\n.line-mask > span {\n  display: block;\n}\n"],"sourceRoot":""}]);
+// Exports
+___CSS_LOADER_EXPORT___.locals = {};
+export default ___CSS_LOADER_EXPORT___;
